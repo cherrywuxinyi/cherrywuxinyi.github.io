@@ -1,0 +1,153 @@
+.nav.container{
+    max-width: 734px;
+}
+
+.nav a {
+    color: #000;
+}
+
+.logo {
+    font-weight: var(--f-m);
+}
+
+.profile {
+    height: 80vh;
+}
+
+.profile, .blog, .article {
+    padding-top: 10vh;
+}
+
+.nav {
+    justify-content: space-between;
+}
+
+.sec-title {
+    border-bottom: 1px solid;
+    padding-bottom: 1em;
+}
+
+.twitter-timeline {
+    width: 100%;
+}
+
+.page-title {
+    margin-bottom: var(--mb-2);
+}
+
+.article-title {
+    font-weight: var(--f-b);
+    font-size: var(--h1-font);
+}
+
+.article-post {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+}
+
+.text-area {
+    line-height: 30px
+}
+
+.sidebar {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.share ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.share a{
+    color: #fff;
+    font-size: 9px;
+}
+
+.share li:before {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.f-share-btn {
+    background-color: #1877F2;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.f-share-btn:before {
+    content: '\f09a';
+}
+
+.t-share-btn {
+    background-color: #1B95E0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.t-share-btn:before {
+    content: '\f099';
+}
+
+.l-share-btn {
+    background-color: #06C755;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.l-share-btn:before {
+    content: '\f3c0';
+}
+
+.side-content h1{
+    font-size: var(--base-font);
+    margin-bottom: var(--mb-2);
+}
+
+.r-post a{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+.r-thumb {
+    width: 60px;
+}
+
+.r-thumb-img {
+    padding-top: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .nav.container {
+        margin: 0 1em;
+    }
+    
+    .twitter-timeline {
+        height: 768px!important;
+    }
+    
+    .article-post {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .blog {
+        height: 80vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1080px!important;
+  }
+    .twitter-timeline {
+        height: 1080px!important;
+    }
+}
