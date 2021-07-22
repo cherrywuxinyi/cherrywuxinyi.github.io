@@ -538,7 +538,7 @@ input {
 }
 
 .f-menu {
-    font-size: var(--smaller-font);
+    font-size: var(--small-font);
     text-align: center;
 }
 
