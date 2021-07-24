@@ -50,3 +50,52 @@ window.addEventListener('scroll', scrollUp)
         $(".fix").removeClass("fixed");
     }
 	});
+
+$(function() {
+$('.sec-title h2').on('inview', function(event, isInView) {
+		if (isInView) {
+		  $(this).addClass('on');
+		}
+	});
+});
+
+$(function() {
+$('main').on('inview', function(event, isInView) {
+		if (isInView) {
+		  $(this).addClass('on');
+		}
+	});
+    
+$('.hero-social').on('inview', function(event, isInView) {
+		if (isInView) {
+		  $(this).addClass('on');
+		}
+	});
+});
+
+/*==================== Scroll ====================*/ 
+const sr = ScrollReveal({
+    distance: '30px',
+    duration: 900,
+    reset: false
+});
+
+sr.reveal(`.fix`, {
+    interval: 10,
+    origin: 'top',
+})
+
+sr.reveal(`.blog-cont`, {
+    interval: 10,
+    origin: 'bottom',
+})
+
+sr.reveal(`.prof-img, .hero_title`, {
+    interval: 150,
+    origin: 'left',
+})
+
+sr.reveal(`.ig-cont, .hero_subtitle, .name, .prof-desc`, {
+    interval: 100,
+    origin: 'right',
+})
